@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(14, 14, 14);
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.content {
+	height: 60%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-size: 50px;
+	color: white;
+}
+
+button {
+	border: 2px solid #f7d872;
+	background-color: rgba(253, 179, 68, 0);
+	border-radius: 40px;
+	margin: 20px 30px;
+	padding: 20px 40px;
+	color: white;
+	animation: fadeIn 0.150s;
+}
+
+ul {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+}
+li {
+	list-style-type: none;
+	margin: 10px 10px;
+	font-size: 20px;
+}
+p {
+	margin: 40px 5px;
+}
+i {
+	font-size: 25px;
+}
+
+button:hover {
+	background-color: rgba(245, 152, 76, 0.4);
+	transition: 0.2s;
+}
+
+.hidden {
+	display: none;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@media all and (max-width: 1000px) {
+	h1 {
+		font-size: 60px;
+	}
+	p {
+		margin-bottom: 40px;
+	}
+
+	.container button {
+		margin: 15px 30px;
+	}
+	.container ul {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
